@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 public class Driver {
     protected WebDriver driver;
 
-    public Driver(WebDriver driver1) {
-        this.driver = driver1;
-        PageFactory.initElements(driver1, this );
+    public Driver(WebDriver driver) {
+        this.driver = driver;
+//        PageFactory.initElements(driver, this );
     }
 }
 

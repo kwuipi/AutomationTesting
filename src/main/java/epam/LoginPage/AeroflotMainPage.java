@@ -7,6 +7,7 @@ import epam.Driver;
 
 
 public class AeroflotMainPage extends Driver {
+
     @FindBy(className = "menu-btn login-icon")
     private WebElement menubtn_loginicon;
 
