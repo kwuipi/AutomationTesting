@@ -1,11 +1,11 @@
-package epam.BockingTicket;
+package epam.BookingTicket;
 
 import epam.BasicPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AeroflotMainBoockingPage extends BasicPage {
+public class AeroflotMainBookingPage extends BasicPage {
 
    @FindBy(name = "ori0")
     private WebElement departure;
@@ -16,13 +16,13 @@ public class AeroflotMainBoockingPage extends BasicPage {
     @FindBy(id = "ttSubmitBtn")
     private WebElement submitButton;
 
-    public AeroflotMainBoockingPage (WebDriver driver ) { super(driver);}
+    public AeroflotMainBookingPage(WebDriver driver ) { super(driver);}
 
-    public AeroflotMainBoockingPage book (String dep, String dest) {
+    public AeroflotMainBookingPage book (String dep, String dest) {
         departure.sendKeys(dep);
         destination.sendKeys(dest);
         submitButton.click();
-        return new AeroflotMainBoockingPage(driver);
+        return new AeroflotMainBookingPage(driver);
     }
 
 }
