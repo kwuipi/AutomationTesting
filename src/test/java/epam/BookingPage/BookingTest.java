@@ -1,6 +1,6 @@
 package epam.BookingPage;
 
-import epam.BockingTicket.AeroflotMainBoockingPage;
+import epam.BookingTicket.AeroflotMainBookingPage;
 import epam.BasicPageTest;
 import org.testng.annotations.Test;
 
@@ -14,8 +14,8 @@ public class BookingTest extends BasicPageTest {
     @Test
     public void bookingTest() {
         driver.get(URL);
-        AeroflotMainBoockingPage bookPage = new AeroflotMainBoockingPage(driver);
-        AeroflotMainBoockingPage page = bookPage.book(dep, dest);
+        AeroflotMainBookingPage bookPage = new AeroflotMainBookingPage(driver);
+        AeroflotMainBookingPage page = bookPage.book(dep, dest);
     }
 
 }
