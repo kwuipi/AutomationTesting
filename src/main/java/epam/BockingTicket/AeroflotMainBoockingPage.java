@@ -1,11 +1,11 @@
 package epam.BockingTicket;
 
-import epam.Driver;
+import epam.BasicPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AeroflotMainBoockingPage extends Driver {
+public class AeroflotMainBoockingPage extends BasicPage {
 
    @FindBy(name = "ori0")
     private WebElement departure;

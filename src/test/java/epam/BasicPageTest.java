@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import java.util.concurrent.TimeUnit;
 
 
-public class DriverTest {
+public class BasicPageTest {
     protected static WebDriver driver;
 
     @BeforeTest

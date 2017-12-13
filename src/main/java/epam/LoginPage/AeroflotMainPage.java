@@ -3,18 +3,15 @@ package epam.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import epam.Driver;
+import epam.BasicPage;
 
 
-public class AeroflotMainPage extends Driver {
+public class AeroflotMainPage extends BasicPage {
 
     @FindBy(className = "menu-btn login-icon")
     private WebElement menubtn_loginicon;
 
-    public AeroflotMainPage(WebDriver driver) {
-        super(driver);
-    }
+    public AeroflotMainPage(WebDriver driver) { super(driver); }
 
-    public boolean isLogged() { return menubtn_loginicon.isDisplayed();
-    }
+    public void logginButton() { menubtn_loginicon.click(); }
 }

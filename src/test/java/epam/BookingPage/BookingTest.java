@@ -1,10 +1,10 @@
 package epam.BookingPage;
 
 import epam.BockingTicket.AeroflotMainBoockingPage;
-import epam.DriverTest;
+import epam.BasicPageTest;
 import org.testng.annotations.Test;
 
-public class BookingTest extends DriverTest {
+public class BookingTest extends BasicPageTest {
     private static final String URL = "https://www.aeroflot.ru";
 
     private static final String dep = "minsk";

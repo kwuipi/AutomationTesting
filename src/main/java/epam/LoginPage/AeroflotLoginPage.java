@@ -3,9 +3,9 @@ package epam.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import epam.Driver;
+import epam.BasicPage;
 
-public class AeroflotLoginPage extends Driver{
+public class AeroflotLoginPage extends BasicPage {
 
     @FindBy(name = "login")
     private WebElement login;
